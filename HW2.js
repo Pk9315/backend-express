@@ -7,7 +7,7 @@ app.get("/", (req,res) =>{
 })
 
 app.get("/signin", (req,res) =>{
-    res.send("This is the Sign In page.")
+    res.send("This is the Sign in page.")
 })
 
 app.get("/booking", (req,res) =>{
