@@ -9,6 +9,15 @@ app.get("/Hospital", (req,res) =>{
 app.get("/Hotel", (req,res) =>{
     res.send("We have all types of room")
 })
+
+const students = [
+    { name: "Rahul", age: 21, course: "BCA" },
+    { name: "Priya", age: 22, course: "BCA" }
+];
+
+app.get("/students", (req,res) =>{
+    res.send(students)
+})
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () =>{
