@@ -22,6 +22,10 @@ app.get("/gallary", (req,res) =>{
     res.send("View Our Gallary")
 })
 
+app.get("/txn", (req,res) =>{
+    res.send("All txn team are there in the meeting")
+})
+
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () =>{
     console.log("Server is running on port", PORT)
